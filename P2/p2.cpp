@@ -1,11 +1,18 @@
 #include <iostream>
-#include <fstream>
-#include <string>
+#include <vector>
 
-int main(int argc, char* argv[]) {
-    int id_begin = 11; 
-    int id_end = 22;
-    
+int main() {
+    std::vector<int> nums;
+    int lowerBound;
+    int upperBound; 
+    char dummy; 
 
-    return 0;
+    // Read integers from stdin until EOF
+    while (std::cin >> lowerBound) {
+        std::cin >> dummy;
+        std::cin >> upperBound; 
+        std::cout << lowerBound << "-" << upperBound << std::endl; 
+    }
+
+   
 }
